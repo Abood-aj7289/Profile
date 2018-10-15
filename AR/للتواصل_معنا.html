@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Contact Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="./Css/Style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../Css/Style.css" />
     <script src="main.js"></script>
 </head>
 <body class="contactclas">
@@ -13,56 +13,56 @@
                 <table class="clas1">
                     <tr>
                       <td>
-                          <a href="index.html">Home</a>
+                          <a href="index.html">الصفحة الرئيسسة </a>
                       </td>
                       <td>
-                          <a href="About.html">About</a> 
+                          <a href="معلومات_عنا.html">معلومات عنا</a> 
                       </td>
                       <td>
-                          <a href="Contact.html">Contact</a>   
+                          <a href="للتواصل_معنا.html">التواصل معنا</a>   
                       </td>
                       <td>
-                          <a href="Cv.html">CV</a>   
+                          <a href="السيرة_الذاتية.html">السيرة الذاتية</a>   
                       </td>
                       <td>
-                          <a href="../my-web-seite/DE/Kontakt.html">DE</a>    
+                          <a href="../DE/Kontakt.html">DE</a>    
                       </td>
                       <td>
-                          <a href="../my-web-seite/AR/للتواصل_معنا.html">AR</a>    
+                          <a href="../Contact.html">EN</a>    
                       </td>
-        </tr></table>
-        
+        </tr>
+        <div>
+        <a href="index.html" onclick="myfunction()" id="home">
+                <input type="button" value="back to Home Page" >
+            </a> 
+            <script>
+            function myfunction() {
+                document.getElementById("home").innerHTML
+            }
+            </script>
+            </div>
     <table>
         <tr>
             <td class="clas2">
-            First Name: 
+            الأسم الأول: 
             <br><input type="text" placeholder="Enter your Name"><br>
             </td><br></tr>
             <tr>
             <td class="clas2">
-            Last Name:
+            الأسم الثاني :
             <br><input type="text" placeholder="Enter your Name">
             </td><br></tr>
             <tr>
             <td class="clas2">
-            your Email:
+            الرجاء ادخال ايميلك :
             <br> <input type="text" placeholder="Enter your Name">
             </td><br></tr>
             <tr>
             <td class="clas2">
-              your comment <br> <textarea cols="30" rows="10" placeholder="Enter your comment"></textarea>
+              اكتب تعليق <br> <textarea cols="30" rows="10" placeholder="Enter your comment"></textarea>
             </td>
-        </tr></table>
-        <div>
-            <a href="index.html" onclick="myfunction()" id="home">
-                    <input type="button" value="back to Home Page" >
-                </a> 
-                <script>
-                function myfunction() {
-                    document.getElementById("home").innerHTML
-                }
-                </script>
-                </div>    
+        </tr>
+                 
 
 
 

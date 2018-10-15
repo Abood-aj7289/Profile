@@ -1,0 +1,14 @@
+.clas1{font-size: 20px;border-collapse: collapse;width: 100%; background-color: rgb(228, 154, 154);height: 100%;
+}
+.clas2{color: rgb(243, 236, 236);font-size: 20px;border-collapse: collapse;
+}
+.clas3{color: black;font-size: 20px;border-collapse: collapse
+}
+.Enclas{background-image: url(1.jpg);background-repeat: no-repeat;margin: 0px;background-size: 100%;background-color: rgb(206, 194, 142);
+}
+.Cvclas{background-image: url(cv.png);background-repeat: no-repeat;margin: 0px;background-size: 100%;
+}
+.contactclas{background-image: url(contact.jpg);background-repeat: no-repeat;margin: 0px;background-size: 100%;
+}
+.aboutclas{background-image: url(about.jpg);background-repeat: no-repeat;margin: 0px;background-size: 100%;
+}
