@@ -37,11 +37,19 @@ let counter=1;
 setInterval(function fotos(){
 //everything here will be repeated
 //counter++;
-//counter+=1;
-counter=counter+1;
+counter+=1;
 if(counter==12){
     counter=1;
 }
         document.getElementById("slideImg").src="./img/Deir-Azzor/"+counter+".jpg";
 },1000);
 }
+function showMenu(){
+    let checkStyle=document.getElementById("mainMenu").getAttribute("style");
+    if(checkStyle=="display: none;"){
+     document.getElementById("mainMenu").style="display: block;";
+ }
+ else{
+     document.getElementById("mainMenu").style="display: none;";
+ }
+ }

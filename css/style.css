@@ -1,11 +1,14 @@
+
 *{
     background-origin:content-box ;
 }
+
 .body{
     background-image: url("../img/hom_page.jpg");
     background-size: auto;
     position: relative;
 }
+
 .listDiv{
     margin-top: 0px;
     margin-left: 9px; 
@@ -62,11 +65,12 @@
 .dropdown:hover>.dropdown-content{
     display: block;
 }
+
 .icon{
     width: 100px;height: 100px;float: left;margin-top: 10%;
 }
 .icon>a>img{
-    width: 50px;margin-left: 250%;overflow: hidden;margin-top: 50%;
+    width: 50px;margin-left: 100%;overflow: hidden;margin-top: 50%;
 }
 
 .divImg>img{
@@ -84,3 +88,31 @@
    color: rgb(10, 10, 9);
    border-bottom-right-radius: 20%;font-size: 40px;font-family: cursive;text-decoration: none; margin-top: 23%;display: block;float: left;
 } 
+.menuButton{
+    text-decoration: none;
+    display: none;
+    width: 50px;
+    background-color: brown;
+    text-align: center;
+    border-radius: 50%;
+}
+@media only screen and (max-width:480px){
+    .listUl>li{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:380px){
+    .listUl{
+        display: none;
+    }
+.menuButton{
+    display: block;
+}
+}
+
+
+
+
+/* @media only screen and (max-width:600px){ 
+} لكي تتناسب مع الموبايل*/
