@@ -1,70 +1,66 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Home Page</title>
+    <title>Welcom 2 MY Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="./Css/Style.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+    <script src="./javascript/java.js"></script>
 </head>
-<body class="Enclas">
-    <div class="clas1">
-  <table class="clas1" >
-      <tr>
-        <td class="tdclas">
-            <a href="index.html">Home</a>
-        </td>
-        <td>
-            <a href="About.html">About</a> 
-        </td>
-        <td>
-            <a href="Contact.html">Contact</a>   
-        </td>
-        <td>
-            <a href="Cv.html">CV</a>   
-        </td>
-        <td>
-            <select >
-                <option>
-                <a href="../my-web-seite/DE/index.html">DE</a>
-                </option>
-                <option>
-                <a href="../my-web-seite/AR/index.html">AR</a>
-                </option>    
-        </select>
-        </td>
-      </tr>
-  </table>
-  </div>
-  <br>
-  <div align="left" class="clas2">
-      <table class="clas2">
-          <tr>
-            <td>
-                <h3 align="center">Skills </h3> 
-                <ul style="list-style: square">
-                    <li style="color:rgb(182, 176, 176)">Word</li>
-                    <li style="color:rgb(182, 176, 176)">Exel</li>
-                    <li style="color:rgb(182, 176, 176)">Sql</li>
-                    <li style="color:rgb(182, 176, 176)">Java</li>
-                </ul>
-            </td>
-            <td>
-                <h3 align="center">Education </h3> 
-                <ol type="A">
-                      <li style="color:rgb(182, 176, 176)">Word</li>
-                      <li style="color:rgb(182, 176, 176)">Exel</li>
-                      <li style="color:rgb(182, 176, 176)">Sql</li>
-                      <li style="color:rgb(182, 176, 176)">Java</li>
-                </ol>
-             </td>
-            </tr>
-      </table>
-  </div>
-   
-  
-  
+
+<body class="body">
+    <div class="listDiv">
+        <ul class="listUl">
+            <li class="active">
+                <a href="#" onclick="homeClick(this)">Home</a>
+            </li>
+            <li>
+                <a href="#" onclick="aboutClick(this)">About</a>
+            </li>
+            <li>
+                <a href="#" onclick="contactClick(this)">Contact</a>
+            </li>
+            <li>
+                <a href="#" onclick="galleryClick(this)">Gallery</a>
+            </li>
+            <li class="dropdown"><a href="#">Lang</a>
+                <div class="dropdown-content">
+                    <a href="./DE/index3.html">DE</a>
+                    <a href="./AR/index2.html">AR</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div id="homeDiv">
+        <h3>Home</h3>
+    </div>
+    <div id="aboutDiv" style="display: none;">
+        <h3>about</h3>
+    </div>
+    <div id="contactDiv" style="display: none;">
+        <div class="divImg">
+            <img src="./img/aj.JPG" alt="" >
+        </div>
+        <div class="icon">
+         <a href="https://www.facebook.com/abood.jamad" target="_blank">
+        <img src="./img/facebook.png" ></a>
+        <a href="https://www.instagram.com/3boodjammad/" target="_blank">
+        <img src="./img/inst.png" ></a>
+        <a href="https://www.instagram.com/3boodjammad/" target="_blank">
+        <img src="./img/email.png" ></a>
+        </div>
+        <div class="describe">
+        <pre>mein name ist abdullah ich komme aus syrien ich bin 29 jahre alt ,in meinem heimatland habe IT studiert</pre></div>
+    </div>
+    <div id="galleryDiv" style="display: none;">
+        <a href="#"onclick="fotos()" class="Deir-azzor" >Deir-Azzor</a><br>
+        <div class="randomImg">
+            <img id="slideImg" src="./img/Deir-Azzor/1.jpg" alt="">
+        </div>
+    </div>
 
 </body>
+
 </html>
