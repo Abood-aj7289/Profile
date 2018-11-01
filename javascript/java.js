@@ -1,12 +1,13 @@
 
 function homeClick(i){
+    
     document.getElementsByClassName("active")[0].classList.remove("active");
     i.parentNode.classList.add("active");
     document.getElementById("homeDiv").style="";
     document.getElementById("galleryDiv").style="display:none;";
     document.getElementById("contactDiv").style="display:none;";
     document.getElementById("aboutDiv").style="display:none;";
-    
+   
 }
 function aboutClick(i){
     document.getElementsByClassName("active")[0].classList.remove("active");
@@ -42,7 +43,7 @@ counter+=1;
 if(counter==12){
     counter=1;
 }{
-        document.getElementById("slideImg").src="./img/Deir-Azzor/"+counter+".jpg";
+        document.getElementById("slideImg").src="./img/deir_azzor/"+counter+".jpg";
     }
 },1000);
 }
