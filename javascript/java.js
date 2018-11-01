@@ -1,3 +1,4 @@
+
 function homeClick(i){
     document.getElementsByClassName("active")[0].classList.remove("active");
     i.parentNode.classList.add("active");
@@ -32,7 +33,7 @@ function galleryClick(i){
     document.getElementById("homeDiv").style="display:none;";
 }
 
-function fotos(){
+function fotosDr(){
 let counter=1;
 setInterval(function fotos(){
 //everything here will be repeated
@@ -40,10 +41,38 @@ setInterval(function fotos(){
 counter+=1;
 if(counter==12){
     counter=1;
-}
+}{
         document.getElementById("slideImg").src="./img/Deir-Azzor/"+counter+".jpg";
+    }
 },1000);
 }
+function fotosHm(){
+    let counter=1;
+    setInterval(function fotos(){
+    //everything here will be repeated
+    //counter++;
+    counter+=1;
+    if(counter==15){
+        counter=1;
+    }{
+        document.getElementById("hamburgImg").src="./img/hamburg/"+counter+".jpg";  
+        }
+    },1000);
+}
+function fotosDa(){
+    let counter=1;
+    setInterval(function fotos(){
+    //everything here will be repeated
+    //counter++;
+    counter+=1;
+    if(counter==19){
+        counter=1;
+    }{
+        document.getElementById("damasImg").src="./img/damaskus/"+counter+".jpg";
+        }
+    },1000);
+}
+
 function showMenu(){
     let checkStyle=document.getElementById("mainMenu").getAttribute("style");
     if(checkStyle=="display: none;"){
@@ -53,3 +82,8 @@ function showMenu(){
      document.getElementById("mainMenu").style="display: none;";
  }
  }
+
+ function submit() {
+    document.getElementById("homeDiv").innerHTML
+}
+
