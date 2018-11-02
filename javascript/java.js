@@ -33,23 +33,34 @@ function galleryClick(i){
     document.getElementById("contactDiv").style="display:none;";
     document.getElementById("homeDiv").style="display:none;";
 }
-
+var drCheck=true;
+var drInterval;
 function fotosDr(){
+    if(drCheck){
 let counter=1;
-setInterval(function fotos(){
+drInterval=setInterval(function fotos(){
 //everything here will be repeated
 //counter++;
 counter+=1;
 if(counter==12){
     counter=1;
 }{
-        document.getElementById("slideImg").src="./img/deir_azzor/"+counter+".jpg";
+        document.getElementById("deirImg").src="./img/deir_azzor/"+counter+".jpg";
     }
-},1000);
+},2500);
+drCheck=false;
+    }
+    else{
+        clearInterval(drInterval);
+        drCheck=true;
+    }
 }
+var hmCheck=true;
+var hmInterval;
 function fotosHm(){
+    if(hmCheck){
     let counter=1;
-    setInterval(function fotos(){
+    hmInterval.setInterval(function fotos(){
     //everything here will be repeated
     //counter++;
     counter+=1;
@@ -58,9 +69,16 @@ function fotosHm(){
     }{
         document.getElementById("hamburgImg").src="./img/hamburg/"+counter+".jpg";  
         }
-    },1000);
+    },2500);
+    hmCheck=false;}else{
+        clearInterval(hmInterval);
+        hmCheck=true;
+    }
 }
+var daCheck=true;
+var daInterval;
 function fotosDa(){
+    if(daCheck){
     let counter=1;
     setInterval(function fotos(){
     //everything here will be repeated
@@ -71,7 +89,12 @@ function fotosDa(){
     }{
         document.getElementById("damasImg").src="./img/damaskus/"+counter+".jpg";
         }
-    },1000);
+    },2500);
+    daCheck=false;}
+    else{
+        clearInterval(daInterval);
+        daCheck=true;
+    }
 }
 
 function showMenu(){
@@ -84,7 +107,6 @@ function showMenu(){
  }
  }
 
- function submit() {
-    document.getElementById("homeDiv").innerHTML
-}
+
+
 

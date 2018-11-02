@@ -34,54 +34,75 @@
         </ul>
     </div>
     <div id="homeDiv">
-            <div class="deirazzorImg">
-                    <img id="slideImg" src="../img/deir_azzor/1.jpg" alt="">
-                    <a href="#" onclick="fotosDr()">Deir-Azzor</a>
-                </div>
-        
-                <div class="deirazzorImg">
-                    <img id="hamburgImg" src="../img/hamburg/1.jpg" alt="">
-                    <a href="#" onclick="fotosHm()">Hamburg</a>
-                </div>
-        
-                <div class="deirazzorImg">
-                    <img id="damasImg" src="../img/damaskus/1.jpg" alt="">
-                    <a href="#" onclick="fotosDa()">Damaskus</a>
+        <div class="deirazzorImg">
+            <img id="deirImg" src="../img/deir_azzor/1.jpg" alt="">
+            <a href="#" onclick="fotosDr()">Deir-Azzor</a>
+        </div>
+
+        <div class="deirazzorImg">
+            <img id="hamburgImg" src="../img/hamburg/1.jpg" alt="">
+            <a href="#" onclick="fotosHm()">Hamburg</a>
+        </div>
+
+        <div class="deirazzorImg">
+            <img id="damasImg" src="../img/damaskus/1.jpg" alt="">
+            <a href="#" onclick="fotosDa()">Damaskus</a>
         </div>
     </div>
     <div id="aboutDiv" style="display: none;">
         <div class="divImg">
             <img src="../img/aj.JPG" alt="">
         </div>
-        <div class="icon">
-            <ul>
-                <li>
-                    <a href="https://www.facebook.com/abood.jamad" target="_blank">
-                        <img src="../img/facebook.png"></a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/3boodjammad/" target="_blank">
-                        <img src="../img/inst.png"></a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/3boodjammad/" target="_blank">
-                        <img src="../img/email.png"></a>
-                </li>
-            </ul>
-        </div>
+
         <div class="describe">
-            <p>Summry of my profile
-                BA Information Technology,
-                One year Work experience of Consultant-Social and IT-Maintenance-Dealership.
-            </p>
+            <p>
+                <h3>ملخص لسيرتي الذاتية</h3>
+               ولدت وترعرت في مدينة تحوي على خليط ثقافي قديم وحديث. حاصل على شهادة اجازة في تكنلوجيا المعلومات.عملت لمدة سنة واحدة في الاستشارة الاجتماعية , وخبرة في اختصاص المعلومات(IT)
         </div>
     </div>
 
     <div id="contactDiv" style="display: none;">
-        <div class="divImg">
-            <img src="../img/aj.JPG" alt="">
+        <div class="tableDiv">
+            <table>
+                <tr>
+                    <td>
+                            :الإسم الأول
+                        <br>
+                        <input type="text" placeholder="Enter your Name"><br>
+                    </td>
+                    <br>
+                </tr>
+                <tr>
+                    <td>
+                            :الإسم الثاني
+                        <br>
+                        <input type="text" placeholder="Enter your Last Name">
+                    </td>
+                    <br>
+                </tr>
+                <tr>
+                    <td>
+                            :البريد الإلكتروني
+                        <br>
+                        <input type="text" placeholder="Enter your Email">
+                    </td>
+                    <br>
+                </tr>
+                <tr>
+                    <td>
+                            :اكتب تعليقك
+                        <br>
+                        <textarea cols="30" rows="10" placeholder="Enter your comment" id="myText"></textarea>
+                    </td>
+                </tr>
+            </table>
+            <a href="index.html" onclick="submit()" id="home">
+                <input type="button" value="Submit">
+            </a>
+
         </div>
         <div class="icon">
+                <h3>يمكنك أن تجدني هنا</h3>
             <ul>
                 <li>
                     <a href="https://www.facebook.com/abood.jamad" target="_blank">
@@ -92,17 +113,16 @@
                         <img src="../img/inst.png"></a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/3boodjammad/" target="_blank">
+                    <a href="https://www.gmail.com" target="_blank">
                         <img src="../img/email.png"></a>
                 </li>
             </ul>
+            <h3>Tel:015757823113</h3>
         </div>
-        <div class="describe">
-            <p>Summry of my profile
-                BA Information Technology,
-                One year Work experience of Consultant-Social and IT-Maintenance-Dealership.
-            </p>
-        </div>
+        <div class="logoDiv">
+                <img src="../img/ajlogo.png" alt="">
+            </div>
+
     </div>
     <div id="galleryDiv" style="display: none;">
         <div class="unit">

@@ -67,23 +67,38 @@
 }
 
 .icon{
-    width: 100px;height: 100px;float: left;margin-top: 10%;
+    width: 33.33%;
+    float: left;
+    margin-top: 95px;
 }
-.icon>ul{list-style-type: none;float: left;}
+.icon>h3{
+    font-family: 'Courier New', Courier, monospace;color: rgb(170, 167, 80);text-align: center;font-size: 25px
+}
+.icon>ul{list-style-type: none;
+    float: left;
+    margin-left: 60px;}
 .icon>ul>li>a>img{
     width: 50px;margin-left: 50%;margin-top: 20%;   
 }
-
+.icon>ul>li{
+    float: left; 
+    margin-left: 20px;
+}
 .divImg>img{
     width: 300px;margin-left: 30px;margin-top: 5%;height: 400px;float: left;
     border-radius: 8%;
 }
+.logoDiv{margin-left: auto;width: 300px}
+.logoDiv>img{width: 180px}
 .describe{
-    margin-right: 15%;float: right;font-size: 40px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;color: rgba(219, 200, 89, 0.801);
+    margin-left: 33%;
+    /* float: right; */
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgba(219, 200, 89, 0.801);
+    overflow-wrap: break-word;
+    padding-top: 36px;
 }
-.describe>p{display: block; margin-top: 20%;width: 400px;height: 200px;}
-
-
 
 #homeDiv{
     margin-top: 120px;
@@ -114,9 +129,11 @@
     margin: auto;
 } 
 
- .tableDiv{float:left;width: 33.33%;color: rgb(180, 167, 80);box-sizing: border-box;font-size: 20px
+ .tableDiv{float:left;width: 66.66%;color: rgb(180, 167, 80);box-sizing: border-box;font-size: 20px
     ;margin-top: 20px;}
-.video{margin-left: 29%;margin-top: 8%;}
+.tableDiv input,.tableDiv textarea,.tableDiv table{
+    width:100%;
+}
 .menuButton{
     text-decoration: none;
     display: none;
