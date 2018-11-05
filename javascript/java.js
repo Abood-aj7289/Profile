@@ -61,7 +61,7 @@ var hmInterval;
 function fotosHm(){
     if(hmCheck){
     let counter=1;
-    hmInterval.setInterval(function fotos(){
+    hmInterval=setInterval(function fotos(){
     //everything here will be repeated
     //counter++;
     counter+=1;
@@ -71,7 +71,8 @@ function fotosHm(){
         document.getElementById("hamburgImg").src="./img/hamburg/"+counter+".jpg";  
         }
     },2500);
-    hmCheck=false;}else{
+    hmCheck=false;}
+    else{
         clearInterval(hmInterval);
         hmCheck=true;
     }
@@ -107,6 +108,9 @@ function showMenu(){
      document.getElementById("mainMenu").style="display: block;";
  }
  }
+ 
+
+
 
 
 
