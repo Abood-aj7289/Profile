@@ -16,6 +16,7 @@ function aboutClick(i){
     document.getElementById("galleryDiv").style="display:none;";
     document.getElementById("contactDiv").style="display:none;";
     document.getElementById("homeDiv").style="display:none;";
+   
 }
 function contactClick(i){
     document.getElementsByClassName("active")[0].classList.remove("active");
@@ -99,14 +100,13 @@ function fotosDa(){
 
 function showMenu(){
     let checkStyle=document.getElementById("mainMenu").getAttribute("style");
-    if(checkStyle=="display: none;"){
-     document.getElementById("mainMenu").style="display: block;";
- }
- else{
+    if(checkStyle=="display: block;"){
      document.getElementById("mainMenu").style="display: none;";
  }
+ else{
+     document.getElementById("mainMenu").style="display: block;";
  }
-
+ }
 
 
 
